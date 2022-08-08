@@ -3,7 +3,7 @@ let forecastHeader = $('#forecastHeader');
 let userInput = $('#userInput');
 let currentWeather = $('#currentWeather');
 let fiveDayContainer = $('#forecastContainer');
-let myKey = '5fcfffd05f1c1fc99dc1b5389fb22257';
+let apiKey = '5fcfffd05f1c1fc99dc1b5389fb22257';
 
 $(function() {
   backgroundImage();
@@ -28,7 +28,7 @@ const getData = (usercity) => {
 
 
 const getCurrentForecast = (usercity) => {
-  const queryUrl = `https://api.openweathermap.org/data/2.5/weather?q=${usercity}&units=metric&appid=${myKey}`;
+  const queryUrl = `https://api.openweathermap.org/data/2.5/weather?q=${usercity}&units=metric&appid=${apiKey}`;
   $.ajax({
     url: queryUrl,
   })
@@ -55,7 +55,7 @@ const handleWeatherData = (data) => {
 
 const getUvIndex = (lat, lon) => {
   let queryUVUrl =
-  `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${myKey}`;    
+  `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${apiKey}`;    
   $.ajax({
     url: queryUVUrl,
   })
@@ -83,7 +83,7 @@ const getUvIndex = (lat, lon) => {
  
   const FiveDayForecast = (usercity) => {
     const query5DayUrl =
-    `https://api.openweathermap.org/data/2.5/forecast?q=${usercity}&units=metric&appid=${myKey}`;
+    `https://api.openweathermap.org/data/2.5/forecast?q=${usercity}&units=metric&appid=${apiKey}`;
     $.ajax({
       url: query5DayUrl,
     })
