@@ -5,19 +5,6 @@ let currentWeather = $('#currentWeather');
 let fiveDayContainer = $('#forecastContainer');
 let apiKey = '5fcfffd05f1c1fc99dc1b5389fb22257';
 
-$(function() {
-  backgroundImage();
-  let retrievedArray = JSON.parse(localStorage.getItem('cities'));
-  if (retrievedArray !== null) {
-    saveArray = retrievedArray;
-    let lastcity = saveArray[saveArray.length -1];
-    getData(lastcity);
-    saveArray.map((city => displaySearchHistory(city)));
-  }
-    return false;
-});
-
-
 const getData = (usercity) => {
     currentWeather.empty();
   forecastHeader.empty();
