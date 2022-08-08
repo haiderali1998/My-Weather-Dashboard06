@@ -1,0 +1,24 @@
+*:root {
+    background-color: rgb(60, 105, 237);
+}
+
+#title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(60, 105, 237);
+    float: right;
+    text-justify: initial;
+}
+
+.searchTitle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 1em;
+}
+
+button:hover {
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-box-shadow: inset -1px 3px 8px 5px #f5f6f8, 2px 5px 16px 0px #eef1f5, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: inset -1px 3px 8px 5px #f8fafc, 2px 5px 16px 0px #0c68f1, 5px 5px 15px 5px rgba(241, 235, 235, 0);
+    transform: scale(1.1);
+    transition: transform 50ms;
+}
