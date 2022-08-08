@@ -24,3 +24,12 @@ THEN I am again presented with current and future conditions for that city
 <section>
     <img alt="screenshot" src="./assets/screenshot.png" width=550px height=350px>
 </section>
+
+## URL
+https://haiderali1998.github.io/My-Weather-Dashboard06/
+
+## GitHub URL
+
+https://github.com/haiderali1998/My-Weather-Dashboard06
+
+
